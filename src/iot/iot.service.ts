@@ -40,7 +40,7 @@ export class IotService implements OnModuleInit {
     private tempurature() {
         console.log('tempurature called')
         this.temperatureIntervalId = setInterval(async () => {
-            const randomNumber = Math.floor(Math.random() * 11) + 20;
+            const randomNumber = (Math.floor(Math.random() * 1100) + 2000)/100;
             this.sendIOTinfo(0,randomNumber)
         }, 500);
          
