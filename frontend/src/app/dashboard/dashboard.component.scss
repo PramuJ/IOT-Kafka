@@ -1,6 +1,6 @@
 .dashboard-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     padding: 20px;
   }
@@ -8,7 +8,7 @@
   .dashboard-column {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Space between widgets */
+    gap: 15px; 
   }
   
   h2 {
