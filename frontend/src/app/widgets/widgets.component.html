@@ -1,0 +1,23 @@
+<div class="widget">
+    <!-- <div class="widget-header">
+      <h3>{{ title }}</h3>
+    </div> -->
+  
+    <div class="widget-body">
+      <div *ngIf="minAvg !== undefined" class="widget-value">
+        <h4>1 Min Avg:</h4>
+        <p>{{ minAvg }} {{ unit }}</p>
+      </div>
+  
+      <div *ngIf="hrAvg !== undefined" class="widget-value">
+        <h4>1 Hour Avg:</h4>
+        <p>{{ hrAvg }} {{ unit }}</p>
+      </div>
+  
+      <div *ngIf="max !== undefined" class="widget-value">
+        <h4>1 Hour Max:</h4>
+        <p>{{ max }} {{ unit }}</p>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,71 @@
+<div class="dashboard-container">
+    <!-- Temperature Section -->
+    <div class="dashboard-column">
+      <h2>Temperature</h2>
+      
+      <app-widget 
+        title="1 Min Avg" 
+        [minAvg]="temperature.Minavg" 
+        [unit]="'°C'">
+      </app-widget>
+      
+      <app-widget 
+        title="1 Hour Avg" 
+        [hrAvg]="temperature.Hravg" 
+        [unit]="'°C'">
+      </app-widget>
+      
+      <app-widget 
+        title="1 Hour Max" 
+        [max]="temperature.max" 
+        [unit]="'°C'">
+      </app-widget>
+    </div>
+  
+    <!-- Humidity Section -->
+    <div class="dashboard-column">
+      <h2>Humidity</h2>
+      
+      <app-widget 
+        title="1 Min Avg" 
+        [minAvg]="humidity.Minavg" 
+        [unit]="'%'">
+      </app-widget>
+      
+      <app-widget 
+        title="1 Hour Avg" 
+        [hrAvg]="humidity.Hravg" 
+        [unit]="'%'">
+      </app-widget>
+      
+      <app-widget 
+        title="1 Hour Max" 
+        [max]="humidity.max" 
+        [unit]="'%'">
+      </app-widget>
+    </div>
+  
+    <!-- Product Count Section -->
+    <div class="dashboard-column">
+      <h2>Product Count</h2>
+      
+      <app-widget 
+        title="1 Min Avg" 
+        [minAvg]="productCount.Minavg" 
+        [unit]="'items'">
+      </app-widget>
+      
+      <app-widget 
+        title="1 Hour Avg" 
+        [hrAvg]="productCount.Hravg" 
+        [unit]="'items'">
+      </app-widget>
+      
+      <app-widget 
+        title="1 Hour Max" 
+        [max]="productCount.max" 
+        [unit]="'items'">
+      </app-widget>
+    </div>
+  </div>
+  
